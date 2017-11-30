@@ -103,6 +103,7 @@ h1.logo{
     font-weight:bold;
     color: white;
     background: none;
+    text-decoration:none;
     text-shadow: 2px 2px #00DD77,-2px 2px #00DD77,2px -2px #00DD77,-2px -2px #00DD77;
 }
 
