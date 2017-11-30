@@ -172,24 +172,21 @@ h1.logo{
 }
 
 ul.top{
+    display: table;
+    table-layout: fixed;
     padding: 0;
-    text-align:justify;
     margin: 4px 0;
-}
-ul.top:after{
-    content: "";
-    display: inline-block;
     width: 100%;
-    line-height: 0;
-    height: 0;
 }
 ul.top li{
-    display: inline-block;
+    display: table-cell;
+    vertical-align: middle;
     margin: 6px 0;
-    width: 32%;
+    text-align:justify;
+    padding: 5px;
 }
 ul.top li a{
-    display:inline-block;
+    display: block;
     min-width:10em;
     width:100%;
     padding: 0.5em 0;
