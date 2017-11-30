@@ -64,6 +64,11 @@ b{
     font-family: "ヒラギノ丸ゴ ProN","Hiragino Maru Gothic ProN","HG丸ｺﾞｼｯｸM-PRO","メイリオ","Meiryo";
 }
 
+div#twitter{
+    width: 290px;
+    height: 610px;
+}
+
 p.right{
     text-align:right;
 }
@@ -92,7 +97,7 @@ img.cover{
     width:100%;
     max-width: 900px;
     margin: 0;
-    background-image:url('img/top4.jpg')
+    background-image:url('img/top.jpg')
 }
 
 /* top画像キャプション */
