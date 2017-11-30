@@ -182,7 +182,7 @@ ul.top li a{
     font-size:140%;
     background-color: #444444;
     text-align:center;
-    
+    text-decoration:none;
     color: white;
     border-radius:4px;
 }
