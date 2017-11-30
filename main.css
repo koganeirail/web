@@ -117,9 +117,7 @@ h1.logo{
     margin: 0 auto;
 }
 
-.frame ,.cb, .tdftad{
-    box-shadow: 5px 0px 5px rgba(0,0,0,0.4);
-    width: 90vw;
+.frame {
     max-width:900px;
     min-width:700px;
 }
