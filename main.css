@@ -11,7 +11,6 @@ h1, h1 a{
     margin:0;
     font-family:"ヒラギノ角ゴ ProN W6","メイリオ","ＭＳ Ｐゴシック";
     color: white;
-    background-color:  #0077DD;
 }
 
 article, div.box{
@@ -100,22 +99,10 @@ img.cover{
     background-image:url('img/top.jpg')
 }
 
-/* top画像キャプション */
-.lu{
-    margin: 0 0 10px 0;
-    padding: 0.2em 10px;
-    background-color: #0077DD;
-    color: white;
-    font-size: 10pt;
-    text-align: right;
-    border-radius: 0 0 5px 5px;
-}
-
 h1.logo{
     font-weight:bold;
     color: white;
     background: none;
-    -webkit-text-stroke: 2px #00DD77;
     text-shadow: 2px 2px #00DD77,-2px 2px #00DD77,2px -2px #00DD77,-2px -2px #00DD77;
 }
 
@@ -194,7 +181,7 @@ ul.top li a{
     font-size:140%;
     background-color: #444444;
     text-align:center;
-    text-decoration:none;
+    
     color: white;
     border-radius:4px;
 }
