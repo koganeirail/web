@@ -117,7 +117,7 @@ h1.logo{
     margin: 0 auto;
 }
 
-.frame {
+.frame ,.cb, .tdftad{
     max-width:900px;
     min-width:700px;
 }
