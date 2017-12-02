@@ -6,11 +6,11 @@ const minifyHTML = require('gulp-minify-html');
 // ejs compile
 gulp.task('ejs',()=>{
   return gulp.src("./ejs/*.ejs.html")
-    .pipe(ejs({}, {"ext": ".html"}))
-    .pipe(minifyHTML({ empty: true }))
     .pipe(rename(function (path) {
 		path.basename = path.basename.replace(".ejs", "");
 	}))
+    .pipe(ejs({}, {"ext": ".html"}))
+    .pipe(minifyHTML({ empty: true }))
     .pipe(gulp.dest("./dist"));
 });
 

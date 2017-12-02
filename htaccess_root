@@ -1,0 +1,11 @@
+RewriteEngine On
+RewriteCond %{ENV:HTTPS} !^on$
+RewriteCond %{HTTP:X-SAKURA-FORWARDED-FOR} ^$
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+Header set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+
+<Files ~ ".(gif|jpe?g|JPE?G|png|ico|css)$">
+Header set Cache-Control "max-age=3600, public"
+</Files>
+
