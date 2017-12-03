@@ -1,4 +1,28 @@
 <%- include('partial/header.ejs.html', {title: 'トップページ'}) %>
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "url": "https://koganeirail.club",
+        "name": "法政大学小金井鉄道研究会",
+        "email": "mailto:k_houtetsu@hotmail.co.jp",
+        "address": [
+            {
+                "@type": "PostalAddress",
+                "addressLocality": "Tokyo",
+                "postalCode": "1848584",
+                "streetAddress": "3-7-2 Kajino-cho Koganei-shi"
+            },
+            {
+                "@type": "PostalAddress",
+                "addressLocality": "東京都",
+                "postalCode": "1848584",
+                "streetAddress": "小金井市梶野町3-7-2"
+            }
+        ]
+    }
+    </script>
+
     <ul class="top">
 	<li><a href="/about.html">当会の紹介</a></li>
 	<li><a href="/mairo.html">会誌マイロネフ</a></li>
