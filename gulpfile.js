@@ -11,7 +11,7 @@ gulp.task('ejs',()=>{
 	}))
     .pipe(ejs({}, {"ext": ".html"}))
     .pipe(minifyHTML({ empty: true }))
-    .pipe(gulp.dest("./dist"));
+    .pipe(gulp.dest("./docs"));
 });
 
 gulp.task('watch', ()=>{
