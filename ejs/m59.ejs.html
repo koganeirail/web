@@ -1,54 +1,32 @@
 <%- include('partial/header.ejs.html', {title: 'マイロネフ59号'}) %>
-<style type="text/css">
-img.cover{
-	border: 1px outset deepskyblue; /* 背表紙の色に合わせる */
-}
-h2{	background-color: deepskyblue; /* 背表紙の色に合わせる */
-	color: black;
-}
-</style>
 <%- include('partial/mairo_bread.ejs.html', {vol: 59}) %>
-<h2>マイロネフ59号</h2>
-<section>
-<img src="mairo_files/m59.jpg" alt="マイロネフ 59号" class="cover" height="279" width="200">
-<div class="floatBox">
-<p>2010年12月発行</p>
-<p><b>特集 ローカル線の駅</b></p>
-<p>B5版 44ページ</p>
-</div>
 
-<h3>内容</h3>
-<article>
-<p>今回の特集は趣向を変えて「駅」をテーマにしました。いろいろな列車に乗ったとしても、数多くの駅は通り過ぎてしまいますが、あえて降りてみることによってその駅、その駅の雰囲気を感じることができるのではないかと思います。今の様子をこのマイロネフに載せることで、記録の一つにもなるのではないでしょうか。<br>
-例年のように、柔らかい記事から堅い記事まで取り揃えました。このマイロネフ59号から皆さんがいろいろなことを感じ、また楽しんいただければ幸いです。
-</p>
-
-<h4>特集 ローカル線の駅</h4>
-<ul>
-<li>魅惑の駅舎 因美線</li>
-<li>飯田線の駅</li>
-<li>夏草や兵どもが夢のあと</li>
-</ul>		
-<h4>個人記事</h4>
-<ul>
-<li>山手線のホームドア設置について</li>
-<li>蒸気を追って調兵山へ</li>
-<li>鉄道ブームと鉄道ファンについて</li>
-<li>JR東日本 秋田車両センターを訪ねて</li>
-<li>小さな機関車・第五話<br>
-幻でなかった、茅沼炭化工業の8119との出会い</li>
-<li>麻布校舎時代 思い出の中の都電</li>
-<li>鉄道写真 ネガフィルムのデジタル化報告</li>
-<li>Topics
-</ul>
-</article>
-<h3>本文サンプル</h3>
-<article>
-<a href="mairo_files/sample/M59_1.jpg"><img src="mairo_files/sample/M59_1s.jpg" alt="本文サンプル1" class="cont" height="285" width="400"></a>
-<a href="mairo_files/sample/M59_2.jpg"><img src="mairo_files/sample/M59_2s.jpg" alt="本文サンプル2" class="cont" height="285" width="400"></a>
-<a href="mairo_files/sample/M59_3.jpg"><img src="mairo_files/sample/M59_3s.jpg" alt="本文サンプル3" class="cont" height="285" width="400"></a>
-<a href="mairo_files/sample/M59_4.jpg"><img src="mairo_files/sample/M59_4s.jpg" alt="本文サンプル4" class="cont" height="285" width="400"></a>
-<a href="mairo_files/sample/M59_5.jpg"><img src="mairo_files/sample/M59_5s.jpg" alt="本文サンプル5" class="cont" height="285" width="400"></a>
-</article>
+<%- include('partial/mairo_page.ejs.html', {
+    color: 'deepskyblue',
+    vol: 59,
+    publish: {'year': 2010, 'month': 12},
+    feature: '特集 ローカル線の駅',
+    pages: 44,
+    hasSample: true,
+    samples: 5,
+    introduction: '今回の特集は趣向を変えて「駅」をテーマにしました。いろいろな列車に乗ったとしても、数多くの駅は通り過ぎてしまいますが、あえて降りてみることによってその駅、その駅の雰囲気を感じることができるのではないかと思います。今の様子をこのマイロネフに載せることで、記録の一つにもなるのではないでしょうか。<br>例年のように、柔らかい記事から堅い記事まで取り揃えました。このマイロネフ59号から皆さんがいろいろなことを感じ、また楽しんいただければ幸いです。',
+    feature_subjects: [
+        '魅惑の駅舎 因美線',
+        '飯田線の駅',
+        '夏草や兵どもが夢のあと',
+    ],
+    personal_subjects: [
+        '山手線のホームドア設置について',
+        '蒸気を追って調兵山へ',
+        '鉄道ブームと鉄道ファンについて',
+        'JR東日本 秋田車両センターを訪ねて',
+        '小さな機関車・第五話',
+        '幻でなかった、茅沼炭化工業の8119との出会い',
+        '麻布校舎時代 思い出の中の都電',
+        '鉄道写真 ネガフィルムのデジタル化報告',
+        'Topics',
+    ],
+    hasSpecial: false,
+}) %>
 
 <%- include('partial/footer.ejs.html') %>

@@ -1,0 +1,40 @@
+<h2 style="h2{background-color: <%= color %>;}">マイロネフ<%= vol %>号</h2>
+<img src="mairo_files/m<%= vol %>.jpg" alt="マイロネフ <%= vol %>号" class="cover">
+<div class="floatBox">
+    <p><%= publish.year %>年<%= publish.month %>月発行</p>
+    <p><b><%= feature %></b></p>
+    <p>B5版 <%= pages %>ページ</p>
+</div>
+
+<h3>内容</h3>
+<p><%- introduction %></p>
+
+<h4><%= feature %></h4>
+<ul>
+<% feature_subjects.forEach(function(subject) { %>
+    <li><%- subject %></li>
+<% }); %>
+</ul>
+
+<% if (hasSpecial) { %>
+    <h4><%= special_title %></h4>
+    <ul>
+    <% special_subjects.forEach(function(subject) { %>
+        <li><%- subject %></li>
+    <% }); %>
+    </ul>
+<% } %>
+
+<h4>個人記事</h4>
+<ul>
+<% personal_subjects.forEach(function(subject) { %>
+    <li><%- subject %></li>
+<% }); %>
+</ul>
+
+<% if (hasSample) { %>
+    <h3>本文サンプル</h3>
+    <% for (var i = 1; i < samples; i++) { %>
+        <a href="mairo_files/sample/M<%= vol %>_<%= i %>.jpg"><img src="mairo_files/sample/M<%= vol %>_<%= i %>s.jpg" alt="本文サンプル" class="cont" height="285" width="400"></a>
+    <% } %>
+<% } %>
