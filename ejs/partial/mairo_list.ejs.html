@@ -1,0 +1,21 @@
+<h4><%= pub_year %>年発行 マイロネフ <%= vol %>号
+<% if (new_item) { %>
+    <span class="new">最新号</span>
+<% } %>
+</h4>
+
+<a href="m<%= vol %>.html"><img src="mairo_files/m<%= vol %>.jpg" alt="マイロネフ <%= vol %>号" class="cover"></a>
+<p><b><%= feature %></b></p>
+<ul>
+<% subjects.forEach(function(subject) { %>
+    <li><%- subject %></li>
+<% }); %>
+</ul>
+
+<% if (out_of_stock) {%>
+<p><del>定価 <%= price %>円</del> 在庫なし</p>
+<% } else { %> 
+<p>定価 <%= price %>円</p>
+<% } %>
+
+<p><a><a href="m<%= vol %>.html">詳細を見る</a></p>
