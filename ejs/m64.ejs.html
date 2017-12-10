@@ -1,55 +1,35 @@
 <%- include('partial/header.ejs.html', {title: 'マイロネフ64号'}) %>
-<style type="text/css">
-img.cover{
-	border: 1px outset #ed8e00; /* 背表紙の色に合わせる */
-}
-h2{	background-color: #ed8e00; /* 背表紙の色に合わせる */
-	color: white;
-}
-</style>
 <%- include('partial/mairo_bread.ejs.html', {vol: 64}) %>
-<h2>マイロネフ64号</h2>
-<section>
-<img src="mairo_files/m64.jpg" alt="マイロネフ 64号" class="cover" height="285" width="200">
-<div class="floatBox">
-<p>2014年11月発行</p>
-<p><b>特集 大都市圏の環状鉄道</b></p>
-<p>B5版 108ページ</p>
-<p><a href="https://koganeirail.booth.pm/items/682930">販売ページ</a></p>
-</div>
 
-<h3>内容</h3>
-<article>
-<p>大都市圏の環状鉄道といえば、他線との接続駅が多いものやその接続路線の多さから多数の貨物列車が走行する路線などを特集しています。最近はこういった路線に力を入れる会社もあります。<br>
-また、今回は伊豆急行線にて運行した小金井鉄道研究会60周年記念列車についても特集しています。<br>
-<a href="mairo_files/m64_teisei.pdf">内容に関して訂正がございます。大変申し訳ありません。</a></p>
-
-<h4>特集 大都市圏の環状鉄道</h4>
-<ul>
-<li>横浜線に接続する鉄道路線</li>
-<li>メガループの優等列車</li>
-<li>愛知環状鉄道</li>
-</ul>
-<h4>60周年記念列車運転</h4>
-<h4>個人記事</h4>
-<ul>
-<li>伊豆急行線各駅停車</li>
-<li>THE FINAL SEASON of series 189</li>
-<li>相模線各駅停車</li>
-<li>旅してみよう新潟編</li>
-<li>予土線各駅停車</li>
-<li>三陸鉄道北リアス線島越駅周辺の近況</li>
-<li>てっけんツアー報告</li>
-<li>Topics</li>
-</ul>
-</article>
-<h3>本文サンプル</h3>
-<article>
-<a href="mairo_files/sample/M64_1.jpg"><img src="mairo_files/sample/M64_1s.jpg" alt="本文サンプル1" class="cont" height="285" width="400"></a>
-<a href="mairo_files/sample/M64_2.jpg"><img src="mairo_files/sample/M64_2s.jpg" alt="本文サンプル2" class="cont" height="285" width="400"></a>
-<a href="mairo_files/sample/M64_3.jpg"><img src="mairo_files/sample/M64_3s.jpg" alt="本文サンプル3" class="cont" height="285" width="400"></a>
-<a href="mairo_files/sample/M64_4.jpg"><img src="mairo_files/sample/M64_4s.jpg" alt="本文サンプル4" class="cont" height="285" width="400"></a>
-<a href="mairo_files/sample/M64_5.jpg"><img src="mairo_files/sample/M64_5s.jpg" alt="本文サンプル5" class="cont" height="285" width="400"></a>
-</article>
+<%- include('partial/mairo_page.ejs.html', {
+    color: '#ed8e00',
+    vol: 64,
+    publish: {'year': 2014, 'month': 11},
+    feature: '特集 大都市圏の環状鉄道',
+    pages: 108,
+    hasSample: true,
+    samples: 5,
+    introduction: '大都市圏の環状鉄道といえば、他線との接続駅が多いものやその接続路線の多さから多数の貨物列車が走行する路線などを特集しています。最近はこういった路線に力を入れる会社もあります。<br>また、今回は伊豆急行線にて運行した小金井鉄道研究会60周年記念列車についても特集しています。<br><a href="mairo_files/m64_teisei.pdf">内容に関して訂正がございます。大変申し訳ありません。</a>',
+    feature_subjects: [
+        '横浜線に接続する鉄道路線',
+        'メガループの優等列車',
+        '愛知環状鉄道',
+    ],
+    personal_subjects: [
+        '伊豆急行線各駅停車',
+        'THE FINAL SEASON of series 189',
+        '相模線各駅停車',
+        '旅してみよう新潟編',
+        '予土線各駅停車',
+        '三陸鉄道北リアス線島越駅周辺の近況',
+        'てっけんツアー報告',
+        'Topics'
+    ],
+    hasSpecial: true,
+    special_title: '特集2 60周年記念列車運転',
+    special_subjects: [],
+    hasSellPage: true,
+    selluri: 'https://koganeirail.booth.pm/items/682930',
+}) %>
 
 <%- include('partial/footer.ejs.html') %>

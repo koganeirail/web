@@ -1,52 +1,37 @@
 <%- include('partial/header.ejs.html', {title: 'マイロネフ61号'}) %>
-<style type="text/css">
-h2{	background-color: green; /* 背表紙の色に合わせる */
-	color: white;
-}
-</style>
-<%- include('partial/mairo_bread.ejs.html', {vol: 60}) %>
-<h2>マイロネフ61号</h2>
-<img src="mairo_files/m61.jpg" class="cover" height="285" width="200">
-<div class="floatBox">
-<p>2012年11月発行</p>
-<p><b>特集 閑散路線</b></p>
-<p>B5版 124ページ</p>
-</div>
 
-<h3>内容</h3>
-<article>
-<p>今回は閑散路線ということで、都会の閑散路線から、営業係数が高い赤字閑散路線まで、さまざまな閑散路線を特集しました。編集中に、集まった原稿を見ると様々な閑散路線があることにあらためて驚かされました。<br>
-他の記事も、運転士と車掌という列車運行の最前線を担う業務を体験した感想や、京王線の地下化工事といった設備系の記事、珍しい新車ガイド的な記事、はては鉄道車両に用いられる電線の種類に関する記事等、浅い部分から深い部分までバラエティー豊かな記事が収録されていますので、様々な方に楽しんでいただけるはずです。</p>
+<%- include('partial/mairo_bread.ejs.html', {vol: 61}) %>
 
-<h4>特集 閑散路線</h4>
-<ul>
-<li>北の大地の小さな駅</li>
-<li>南武線浜川崎支線をめぐる</li>
-<li>東京都交通局 浅草線(泉岳寺～西馬込)</li>
-<li>十和田観光電鉄を訪ねて北東北周遊</li>
-<li>上武鉄道を訪ねた日</li>
-<li>閑散路線の苦い歴史と現実</li>
-</ul>
-<h4>個人記事</h4>
-<ul>
-<li>駅めぐりの楽しみと手法</li>
-<li>京王線地下化について</li>
-<li>東京地下鉄 1000系電車</li>
-<li>伊豆箱根鉄道 1100系赤電塗装 運転体験に参加して</li>
-<li>リニア・鉄道館 車掌シミュレータ体験記</li>
-<li>ぷらすあるふぁ「珍しい入場券」</li>
-<li>鉄道車両に使われている電線の話</li>
-<li>Topics</li>
-<li>てっけんツアー報告</li>
-</ul>
-</article>
-<h3>本文サンプル</h3>
-<article>
-<a href="mairo_files/sample/M61_1.jpg"><img src="mairo_files/sample/M61_1s.jpg" alt="本文サンプル1" class="cont" height="285" width="400"></a>
-<a href="mairo_files/sample/M61_2.jpg"><img src="mairo_files/sample/M61_2s.jpg" alt="本文サンプル2" class="cont" height="285" width="400"></a>
-<a href="mairo_files/sample/M61_3.jpg"><img src="mairo_files/sample/M61_3s.jpg" alt="本文サンプル3" class="cont" height="285" width="400"></a>
-<a href="mairo_files/sample/M61_4.jpg"><img src="mairo_files/sample/M61_4s.jpg" alt="本文サンプル4" class="cont" height="285" width="400"></a>
-<a href="mairo_files/sample/M61_5.jpg"><img src="mairo_files/sample/M61_5s.jpg" alt="本文サンプル5" class="cont" height="285" width="400"></a>
-</article>
+<%- include('partial/mairo_page.ejs.html', {
+    color: 'green',
+    vol: 61,
+    publish: {'year': 2012, 'month': 11},
+    feature: '特集 閑散路線',
+    pages: 124,
+    hasSample: true,
+    samples: 5,
+    introduction: '今回は閑散路線ということで、都会の閑散路線から、営業係数が高い赤字閑散路線まで、さまざまな閑散路線を特集しました。編集中に、集まった原稿を見ると様々な閑散路線があることにあらためて驚かされました。<br>他の記事も、運転士と車掌という列車運行の最前線を担う業務を体験した感想や、京王線の地下化工事といった設備系の記事、珍しい新車ガイド的な記事、はては鉄道車両に用いられる電線の種類に関する記事等、浅い部分から深い部分までバラエティー豊かな記事が収録されていますので、様々な方に楽しんでいただけるはずです。',
+    feature_subjects: [
+        '北の大地の小さな駅',
+        '南武線浜川崎支線をめぐる',
+        '東京都交通局 浅草線(泉岳寺～西馬込)',
+        '十和田観光電鉄を訪ねて北東北周遊',
+        '上武鉄道を訪ねた日',
+        '閑散路線の苦い歴史と現実',
+    ],
+    personal_subjects: [
+        '駅めぐりの楽しみと手法',
+        '京王線地下化について',
+        '東京地下鉄 1000系電車',
+        '伊豆箱根鉄道 1100系赤電塗装 運転体験に参加して',
+        'リニア・鉄道館 車掌シミュレータ体験記',
+        'ぷらすあるふぁ「珍しい入場券」',
+        '鉄道車両に使われている電線の話',
+        'Topics',
+        'てっけんツアー報告',
+    ],
+    hasSpecial: false,
+    hasSellPage: false,
+}) %>
 
 <%- include('partial/footer.ejs.html') %>
