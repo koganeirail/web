@@ -1,9 +1,10 @@
-<%- include('partial/header.ejs.html', {title: 'マイロネフ67号'}) %>
-<%- include('partial/mairo_bread.ejs.html', {vol: 67}) %>
+<% var vol = 67; %>
+<%- include('partial/header.ejs.html', {title: `マイロネフ${vol}号`}) %>
+<%- include('partial/mairo_bread.ejs.html', {vol: vol}) %>
 
 <%- include('partial/mairo_page.ejs.html', {
     color: '#38CEFF',
-    vol: 67,
+    vol: vol,
     publish: {'year': 2017, 'month': 11},
     feature: '特集 魅惑の第3セクター',
     pages: 106,

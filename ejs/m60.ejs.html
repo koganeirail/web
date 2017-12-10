@@ -1,9 +1,10 @@
-<%- include('partial/header.ejs.html', {title: 'マイロネフ60号'}) %>
-<%- include('partial/mairo_bread.ejs.html', {vol: 60}) %>
+<% var vol = 60; %>
+<%- include('partial/header.ejs.html', {title: `マイロネフ${vol}号`}) %>
+<%- include('partial/mairo_bread.ejs.html', {vol: vol}) %>
 
 <%- include('partial/mairo_page.ejs.html', {
     color: 'deeppink',
-    vol: 60,
+    vol: vol,
     publish: {'year': 2011, 'month': 11},
     feature: '特集 京浜急行',
     pages: 98,

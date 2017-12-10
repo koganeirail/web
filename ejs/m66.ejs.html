@@ -1,9 +1,10 @@
-<%- include('partial/header.ejs.html', {title: 'マイロネフ66号'}) %>
-<%- include('partial/mairo_bread.ejs.html', {vol: 66}) %>
+<% var vol = 66; %>
+<%- include('partial/header.ejs.html', {title: `マイロネフ${vol}号`}) %>
+<%- include('partial/mairo_bread.ejs.html', {vol: vol}) %>
 
 <%- include('partial/mairo_page.ejs.html', {
     color: '#0F0',
-    vol: 66,
+    vol: vol,
     publish: {'year': 2016, 'month': 11},
     feature: '特集 相互直通運転',
     pages: 96,

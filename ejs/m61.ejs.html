@@ -1,10 +1,10 @@
-<%- include('partial/header.ejs.html', {title: 'マイロネフ61号'}) %>
-
-<%- include('partial/mairo_bread.ejs.html', {vol: 61}) %>
+<% var vol = 61; %>
+<%- include('partial/header.ejs.html', {title: `マイロネフ${vol}号`}) %>
+<%- include('partial/mairo_bread.ejs.html', {vol: vol}) %>
 
 <%- include('partial/mairo_page.ejs.html', {
     color: 'green',
-    vol: 61,
+    vol: vol,
     publish: {'year': 2012, 'month': 11},
     feature: '特集 閑散路線',
     pages: 124,

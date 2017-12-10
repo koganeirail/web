@@ -1,9 +1,10 @@
-<%- include('partial/header.ejs.html', {title: 'マイロネフ64号'}) %>
-<%- include('partial/mairo_bread.ejs.html', {vol: 64}) %>
+<% var vol = 64; %>
+<%- include('partial/header.ejs.html', {title: `マイロネフ${vol}号`}) %>
+<%- include('partial/mairo_bread.ejs.html', {vol: vol}) %>
 
 <%- include('partial/mairo_page.ejs.html', {
     color: '#ed8e00',
-    vol: 64,
+    vol: vol,
     publish: {'year': 2014, 'month': 11},
     feature: '特集 大都市圏の環状鉄道',
     pages: 108,

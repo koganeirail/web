@@ -1,9 +1,10 @@
-<%- include('partial/header.ejs.html', {title: 'マイロネフ65号'}) %>
-<%- include('partial/mairo_bread.ejs.html', {vol: 65}) %>
+<% var vol = 65; %>
+<%- include('partial/header.ejs.html', {title: `マイロネフ${vol}号`}) %>
+<%- include('partial/mairo_bread.ejs.html', {vol: vol}) %>
 
 <%- include('partial/mairo_page.ejs.html', {
     color: '#33f',
-    vol: 65,
+    vol: vol,
     publish: {'year': 2015, 'month': 11},
     feature: '特集 新交通システム',
     pages: 104,

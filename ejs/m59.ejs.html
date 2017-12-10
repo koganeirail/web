@@ -1,9 +1,10 @@
-<%- include('partial/header.ejs.html', {title: 'マイロネフ59号'}) %>
-<%- include('partial/mairo_bread.ejs.html', {vol: 59}) %>
+<% var vol = 59; %>
+<%- include('partial/header.ejs.html', {title: `マイロネフ${vol}号`}) %>
+<%- include('partial/mairo_bread.ejs.html', {vol: vol}) %>
 
 <%- include('partial/mairo_page.ejs.html', {
     color: 'deepskyblue',
-    vol: 59,
+    vol: vol,
     publish: {'year': 2010, 'month': 12},
     feature: '特集 ローカル線の駅',
     pages: 44,

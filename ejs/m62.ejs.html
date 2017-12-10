@@ -1,9 +1,10 @@
-<%- include('partial/header.ejs.html', {title: 'マイロネフ62号'}) %>
-<%- include('partial/mairo_bread.ejs.html', {vol: 62}) %>
+<% var vol = 62; %>
+<%- include('partial/header.ejs.html', {title: `マイロネフ${vol}号`}) %>
+<%- include('partial/mairo_bread.ejs.html', {vol: vol}) %>
 
 <%- include('partial/mairo_page.ejs.html', {
     color: 'red',
-    vol: 62,
+    vol: vol,
     publish: {'year': 2013, 'month': 11},
     feature: '特集 1980年以降に開業した鉄道',
     pages: 132,
