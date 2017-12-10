@@ -1,19 +1,24 @@
 ﻿body{
-    margin: 0;
     background-color:#EEEEEE;
-    -webkit-text-size-adjust: 100%;
 }
 
 h1, h1 a{
     text-align:right;
     text-decoration:none;
-    padding: 0.2em 0.6em;
     margin:0;
-    font-family:"ヒラギノ角ゴ ProN W6","メイリオ","ＭＳ Ｐゴシック";
     color: white;
+    text-shadow: black 1px 1px 10px, black -1px 1px 10px, black 1px -1px 10px, black -1px -1px 10px;
+}
+.title{
+    background-image:url('img/top.jpg');
+    height: 200px;
+    text-align:right;
+}
+.text{
+    display: inline-block;
 }
 
-article, div.box{
+.box{
     margin: 1em 0.5em;
     padding: 1em 1em 1em;
     border-bottom:2px solid #BBBBBB;
@@ -28,11 +33,10 @@ h2, h3, h4{
     clear:both;
 }
 h2, h3{	
-    background-color: #00DD77;//#11AACC;
+    background-color: #00DD77;
     color: white;
     font-size: 20px;
     margin-top: 0px;
-    font-family:"Helvetica","ヒラギノ角ゴ ProN W6","メイリオ","ＭＳ Ｐゴシック";
     border-bottom: 4px solid #888888;
 }
 
@@ -55,12 +59,11 @@ h4{
 }
 
 p{
-    margin: 1em 1.5em;
-    text-indent:1em;
+    margin: 1em;
+    text-indent:0.5em;
 }
 b{
     font-size:130%;
-    font-family: "ヒラギノ丸ゴ ProN","Hiragino Maru Gothic ProN","HG丸ｺﾞｼｯｸM-PRO","メイリオ","Meiryo";
 }
 
 div#twitter{
@@ -81,30 +84,11 @@ img.fig{
 	float: left;
 }
 
-.clear{
-    clear: both;
-}
-
 img.cover{
     float: left; 
     margin-right: 2em; 
     margin-bottom: 1em;
     border: 1px solid gray;
-}
-
-.title{
-    width:100%;
-    max-width: 900px;
-    margin: 0;
-    background-image:url('img/top.jpg')
-}
-
-h1.logo{
-    font-weight:bold;
-    color: white;
-    background: none;
-    text-decoration:none;
-    text-shadow: 2px 2px #00DD77,-2px 2px #00DD77,2px -2px #00DD77,-2px -2px #00DD77;
 }
 
 /* メインフレーム */
@@ -117,12 +101,12 @@ h1.logo{
     margin: 0 auto;
 }
 
-.frame ,.cb, .tdftad{
+.frame ,.cb{
     max-width:900px;
     min-width:700px;
 }
 
-.frame3, .frame3a, .frame2, .frame4{
+.frame3, .frame3a, .frame4{
     border:1px solid #EEEEEE;
     text-align:left;
     overflow: auto;
@@ -148,15 +132,6 @@ h1.logo{
     float:right;
 }
 
- .lineh{
-    line-height: 8px;
-    padding-top:-10px;
-    padding-bottom:-10px;
-}
- .cb{
-    clear:both;
-}
-
 ul.top{
     display: table;
     table-layout: fixed;
@@ -166,19 +141,13 @@ ul.top{
 }
 ul.top li{
     display: table-cell;
-    vertical-align: middle;
-    margin: 6px 0;
-    text-align:justify;
     padding: 5px;
 }
 ul.top li a{
     display: block;
-    min-width:10em;
-    width:100%;
     padding: 0.5em 0;
     margin: 2px 0;
     font-size:140%;
-    background-color: #444444;
     text-align:center;
     text-decoration:none;
     color: white;
@@ -193,15 +162,6 @@ ul.top li:nth-child(2) a{
 ul.top li:nth-child(3) a{
     background-color: rgba(18,194,151,100);
 }
-ul.top li:nth-child(4) a{
-    background-color: rgba(18,63,194,100);
-}
-ul.top li:nth-child(5) a{
-    background-color: rgba(151,18,194,100);
-}
-ul.top li:nth-child(6) a{
-    background-color: rgba(194,18,63,100);
-}
 
 ul.top li a:hover{
     background-color: #888888;
@@ -210,60 +170,24 @@ ul.top li a:visited{
     color: white;
 }
 
-p.banners{
-    text-indent:0px;
-    text-align:center;
-}
-.banner{
-    margin:0px 5px; 
-    border:solid 1px;
-    border-bottom-color:#AAAAAA;
-    border-top-color:#FFFFFF;
-    border-left-color:#FFFFFF;
-    border-right-color:#AAAAAA;
-
-}
-
-.reduceheight{
-    margin-top:-8px;
-    line-height:18px;
-    font-size:17px;
-}
-
 /* 下部奥付 */
-.cb, .tdftad{
+.cb{
     font-size:70%;
-    margin:0 auto !important;
+    margin:0 auto;
     text-indent:0;
     background-color: #333333;
     color: #FFFFFF;
-    padding: 1.2em 3% !important;
-
-}
-.cb a, .tdftad a{
-    color:#AAAAEE;
-}
-.cb a:visited, .tdftad a:visited{
-    color:#AAAAEE;
+    padding: 1.2em 3%;
+    clear:both;
 }
 
 img.reduceheight{
     line-height:20px;
 }
-.title{
-    text-align:right;
-}
-.title img{
-    display: inline-block;
-}
-
-.ad{
-    clear:both;
-}
 
 div#maironefu381{
     float: right;
-    margin: 0 0 1em 1em; 
+    margin: 0.5em; 
     padding: 5px; 
     width: 320px; 
     max-width: 40vw;
@@ -285,48 +209,31 @@ img#m381{
 @media (min-width:781px){
     h1{
         font-size:45px;
-    }
-    .title{
-        height: 200px;
+        padding: 0.2em 0.5em;
     }
 }
 @media (max-width:780px){
-    body{
-        padding:0
+    h1{
+        padding: 1.5em 0.5em;
     }
     img,div{
         max-width:100% !important;
-        height:auto !important;
-        float:none !important;
     }
-    h1{
-        font-size:auto;
+    img.cover{
+        float: left;
+        max-height: 200px;
     }
-    article{
-        padding: 0;
-    }
-    section{
-        margin: auto 0 !important;
-    }
-    
     div#maironefu381{
-        max-width:90% !important;
+        max-width:90%;
     }
     img#m381{
-        max-width:90% !important;
+        max-width:90%;
     }
     span.new{
         font-size:90%
     }
-    .title{
-        height: auto;
-    }
-    .frame ,.cb, .tdftad{
-        width: 100vw;
+    .frame ,.cb{
         min-width: 200px;
-        margin:0;
-        padding: 0 !important;
-        box-shadow:none;
     }
     .frame4{
         width:99%;
@@ -334,12 +241,9 @@ img#m381{
         float:none;
         text-align:center;
     }
-    h1.logo{
-        font-size:200%;
-    }
     ul.top li{
         display:block;
-        margin: 6px auto;
+        margin: auto;
         width: 90%;
         font-size:90%;
     }
