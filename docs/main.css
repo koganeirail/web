@@ -9,24 +9,13 @@ h1, h1 a{
     color: white;
     text-shadow: black 1px 1px 10px, black -1px 1px 10px, black 1px -1px 10px, black -1px -1px 10px;
 }
+.text{
+    display: inline-block;
+}
 .title{
     background-image:url('img/top.jpg');
     height: 200px;
     text-align:right;
-}
-.text{
-    display: inline-block;
-}
-
-.box{
-    margin: 1em 0.5em;
-    padding: 1em 1em 1em;
-    border-bottom:2px solid #BBBBBB;
-    border-radius: 10px;
-}
-
-li {
-    margin: 0em 1.5em;
 }
 
 h2, h3, h4{
@@ -132,6 +121,9 @@ img.cover{
     float:right;
 }
 
+li {
+    margin: 0.5em;
+}
 ul.top{
     display: table;
     table-layout: fixed;
@@ -179,10 +171,6 @@ ul.top li a:visited{
     color: #FFFFFF;
     padding: 1.2em 3%;
     clear:both;
-}
-
-img.reduceheight{
-    line-height:20px;
 }
 
 div#maironefu381{
