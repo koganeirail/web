@@ -1,46 +1,37 @@
 <%- include('partial/header.ejs.html', {title: 'マイロネフ67号'}) %>
-<style type="text/css">
-img.cover{
-	border: 1px outset #38CEFF; /* 背表紙の色に合わせる */
-}
-h2{	background-color: #38CEFF; /* 背表紙の色に合わせる */
-	color: white;
-}
-</style>
 <%- include('partial/mairo_bread.ejs.html', {vol: 67}) %>
-<h2>マイロネフ67号</h2>
-<section>
-<img src="mairo_files/m67.jpg" class="cover" height="285" width="200">
-<div class="floatBox">
-<p>2017年11月発行</p>
-<p><b>特集 魅惑の第3セクター</b></p>
-<p>B5版 106ページ</p>
-<p><a href="https://koganeirail.booth.pm/items/682856">販売・詳細ページ</a></p>
-</div>
 
-<h3>内容</h3>
-<h4>特集 魅惑の第3セクター</h4>
-<ul>
-<li>長良川鉄道</li>
-<li>いすみ鉄道</li>
-<li>ひたちなか海浜鉄道</li>
-<li>水島臨海鉄道</li>
-</ul>
-<h4>個人記事</h4>
-<ul>
-<li>JR北海道のマヤ34を撮りに行った話</li>
-<li>相鉄の連続立体交差事業について</li>
-<li>人、砂利、紙の集まった飯田町駅</li>
-<li>京都・大阪旅行記</li>
-<li>TC型無線式列車接近警報装置を理解する</li>
-<li>鉄道模型“狂”奏曲</li>
-<li>鉄道を撮るために台湾に行った話</li>
-<li>缶バッチの改造について</li>
-<li>木曾森林鉄道</li>
-<li>切符は語る</li>
-<li>2017年活動報告</li>
-<li>Topics</li>
-</ul>
-</section>
+<%- include('partial/mairo_page.ejs.html', {
+    color: '#38CEFF',
+    vol: 67,
+    publish: {'year': 2017, 'month': 11},
+    feature: '特集 魅惑の第3セクター',
+    pages: 106,
+    hasSample: false,
+    introduction: '',
+    feature_subjects: [
+        '長良川鉄道',
+        'いすみ鉄道',
+        'ひたちなか海浜鉄道',
+        '水島臨海鉄道',
+    ],
+    personal_subjects: [
+        'JR北海道のマヤ34を撮りに行った話',
+        '相鉄の連続立体交差事業について',
+        '人、砂利、紙の集まった飯田町駅',
+        '京都・大阪旅行記',
+        'TC型無線式列車接近警報装置を理解する',
+        '鉄道模型“狂”奏曲',
+        '鉄道を撮るために台湾に行った話',
+        '缶バッチの改造について',
+        '木曾森林鉄道',
+        '切符は語る',
+        '2017年活動報告',
+        'Topics',
+    ],
+    hasSpecial: false,
+    hasSellPage: true,
+    selluri: 'https://koganeirail.booth.pm/items/682856',
+}) %>
 
 <%- include('partial/footer.ejs.html') %>
