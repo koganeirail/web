@@ -11,6 +11,7 @@ gulp.task('ejs',()=>{
 		path.basename = path.basename.replace(".ejs", "");
 	}))
     .pipe(ejs({}, {"ext": ".html"}))
+    .pipe(gulp.dest("./notminified"))
     .pipe(minifyHTML({ empty: true }))
     .pipe(gulp.dest("./docs"));
 });
