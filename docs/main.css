@@ -21,6 +21,7 @@ h1, h1 a{
 h2, h3, h4{
     clear:both;
 }
+
 h2, h3{	
     background-color: #00DD77;
     color: white;
@@ -69,9 +70,6 @@ span.new{
 	font-size: 120%;
 	margin-left: 1em;
 }
-img.fig{
-	float: left;
-}
 
 img.cover{
     float: left; 
@@ -80,7 +78,6 @@ img.cover{
     border: 1px solid gray;
 }
 
-/* メインフレーム */
 .frame {		
     background-color: #FFFFFF;
     border-style:none;
@@ -95,30 +92,39 @@ img.cover{
     min-width:700px;
 }
 
-.frame3, .frame3a, .frame4{
-    border:1px solid #EEEEEE;
-    text-align:left;
-    overflow: auto;
-    border-radius:4px;
-}
 .frame3 {
     margin-top:1%;
     margin-bottom:1%;
+    border:1px solid #EEEEEE;
+    overflow: auto;
+    border-radius:4px;
+    display: block;
 }
 
-.frame3a {
-    clear:both;
-    margin-top:1%;
-    margin-bottom:1%;
-    padding-top:-10px;
-}
-
-.frame4{
+.frame_right{
     margin-bottom:1%;
     min-width:250px;
     width:32%;
     margin-left:1.6%;	
     float:right;
+    border:1px solid #EEEEEE;
+    overflow: auto;
+    border-radius:4px;
+}
+
+.ob{
+    margin-bottom:1%;
+    border:1px solid #EEEEEE;
+    overflow: auto;
+    border-radius:4px;
+}
+
+.aboutmairo {
+    display: flex;
+    overflow: auto;
+    clear:both;
+    margin-top:0px;
+    margin-bottom:1em;
 }
 
 li {
@@ -217,17 +223,21 @@ img#m381{
     img#m381{
         max-width:90%;
     }
+    .aboutmairo{
+        display: block;
+    }
     span.new{
         font-size:90%
     }
     .frame ,.cb{
         min-width: 200px;
     }
+    .frame3{
+        
+    }
     .frame4{
         width:99%;
-        margin-left:0;	
-        float:none;
-        text-align:center;
+        margin-left:0;
     }
     ul.top li{
         display:block;
