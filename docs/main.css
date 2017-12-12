@@ -127,6 +127,11 @@ img.cover{
     margin-bottom:1em;
 }
 
+img.aboutmairo {
+    height: 109px;
+    width: auto;
+}
+
 li {
     margin: 0.5em;
 }
@@ -197,7 +202,7 @@ div#maironefu381 p{
 }
 img#m381{
 	height: auto;
-	max-width: 39vw;
+	max-width: 300px;
 }
 
 @media (min-width:781px){
@@ -218,9 +223,6 @@ img#m381{
         max-height: 200px;
     }
     div#maironefu381{
-        max-width:90%;
-    }
-    img#m381{
         max-width:90%;
     }
     .aboutmairo{
