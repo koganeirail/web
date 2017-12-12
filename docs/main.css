@@ -127,8 +127,8 @@ img.cover{
     margin-bottom:1em;
 }
 
-img.aboutmairo {
-    height: 109px;
+.aboutmairo img{
+    height: 100px;
     width: auto;
 }
 
