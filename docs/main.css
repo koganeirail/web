@@ -66,9 +66,9 @@ p.right{
 }
 
 span.new{
-	color: red;
-	font-size: 120%;
-	margin-left: 1em;
+    color: red;
+    font-size: 120%;
+    margin-left: 1em;
 }
 
 img.cover{
@@ -76,6 +76,12 @@ img.cover{
     margin-right: 2em; 
     margin-bottom: 1em;
     border: 1px solid gray;
+}
+
+.square{
+    max-width: 600px;
+    margin: auto;
+    display: block;
 }
 
 .frame {		
