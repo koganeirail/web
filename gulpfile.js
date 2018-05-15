@@ -1,8 +1,8 @@
 const gulp = require('gulp');
 const ejs = require('gulp-ejs');
 const rename = require('gulp-rename');
-const minifyHTML = require('gulp-minify-html');
 const ejsLint = require('ejs-lint');
+const htmlmin = require('gulp-htmlmin');
 
 // ejs compile
 gulp.task('ejs',()=>{
@@ -12,7 +12,7 @@ gulp.task('ejs',()=>{
 	}))
     .pipe(ejs({}, {"ext": ".html"}))
     .pipe(gulp.dest("./notminified"))
-    .pipe(minifyHTML({ empty: true }))
+    .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest("./docs"));
 });
 

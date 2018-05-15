@@ -1,7 +1,6 @@
 ビルド方法
-- Node.jsを導入
-- npm install gulp (その他依存関係も)
-- npm init
+- Node.js, npm, gulpを導入
+- npm update
 - gulp ejs
 
 Created by (mipsparc@gmail.com)
