@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>線路強調地図 with Google Maps API</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <style>
+      #map {
+        height: 90%;
+      }
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <p>線路強調地図 Rail Emphasized Map with Google Maps API by 法政大学小金井鉄道研究会</a></p>
+    <p>利用はGoogle Maps規約に準じます。</p>
+    <form>
+        場所を入力: <input type="text" placeholer="Location" id="addr">
+        <input type="button" value="移動" id="submit">
+    </form>
+
+    <div id="map"></div>
+    <!-- NEVER STEAL THE KEY -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCk9DQ2cGfcx16SPD71x5-3-L04OE1U0jw"></script>
+    <script src="map_conf.js"></script>
+    <script>
+        var submit = document.getElementById("submit");
+        submit.onclick = function() {
+            var addr = document.getElementById("addr").value;
+            addrToLoc(addr);
+        }
+    </script>
+  </body>
+</html>
