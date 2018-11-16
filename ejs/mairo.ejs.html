@@ -44,9 +44,23 @@
 <%- include('partial/mairo_list.ejs.html',
     {
         new_item: true,
+        vol: 68,
+        pub_year: 2018,
+        price: 1000,
+        feature: "特集 廃線",
+        subjects: [
+            "手宮線、砧線、山下臨港線、横浜臨港線<sub>他</sub>",
+            "現役会員執筆記事 列車内伝送系、臨時工事列車 ほか",
+        ],
+        out_of_stock: false,
+    }
+) %>
+<%- include('partial/mairo_list.ejs.html',
+    {
+        new_item: false,
         vol: 67,
         pub_year: 2017,
-        price: 1000,
+        price: 700,
         feature: "特集 魅惑の第3セクター",
         subjects: [
             "長良川鉄道、いすみ鉄道<sub>他</sub>",
