@@ -1,7 +1,7 @@
 # 初期設定
 - Node.js と npmをインストールする
-- コマンド `npm update`
 - コマンド `git clone git@github.com:koganeirail/web.git`
+- コマンド `npm update`
 
 # 編集方法
 お好みのエディタで ejs ディレクトリ以下を触る。
