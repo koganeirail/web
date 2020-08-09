@@ -16,7 +16,7 @@
     <h3>お求めについて</h3>
     <h4>イベントでの販売</h4>
     <p>毎年11月に開催される、<a href="http://koganeisai.com/">大学祭(小金井祭)</a>で販売いたします。定価よりも廉価で頒布していますので、ぜひお越しください。<br>
-    また、近年は日本最大の同人誌即売会の<a href="http://www.comiket.co.jp/">コミックマーケット</a>に毎回出展し、そちらでも頒布(販売)しております。2017年冬コミ(C93)においても3日目 東S59bに出展します。</p>
+    また、近年は日本最大の同人誌即売会の<a href="http://www.comiket.co.jp/">コミックマーケット</a>に毎回出展し、そちらでも頒布(販売)しております。</p>
     <div class="square">
         <img src="img/square.png">
     </div>
@@ -44,6 +44,20 @@
 <%- include('partial/mairo_list.ejs.html',
     {
         new_item: true,
+        vol: 69,
+        pub_year: 2019,
+        price: 1000,
+        feature: "特集 新車両",
+        subjects: [
+            "横浜市交10000形、相鉄12000系、小田急GSE<sub>他</sub>",
+            "現役会員執筆記事 中央線と京王線の比較 ほか",
+        ],
+        out_of_stock: false,
+    }
+) %>
+<%- include('partial/mairo_list.ejs.html',
+    {
+        new_item: false,
         vol: 68,
         pub_year: 2018,
         price: 1000,
