@@ -1,0 +1,38 @@
+<% var vol = 69; %>
+<%- include('partial/header.ejs.html', {title: `マイロネフ${vol}号`}) %>
+<%- include('partial/mairo_bread.ejs.html', {vol: vol}) %>
+
+<%- include('partial/mairo_page.ejs.html', {
+    color: '#1099BD',
+    vol: vol,
+    publish: {'year': 2019, 'month': 11},
+    feature: '特集 新車両',
+    pages: 90,
+    hasSample: false,
+    introduction: 'マイロネフ69では"新車両"を特集しました。各筆者の興味のある新車両について取り上げております。<br>個人記事では、ライバル路線である中央線と京王線の比較記事や、鉄道模型用のセンサー線路の制作記事など、各筆者の個性溢れる記事が収録されています。',
+    feature_subjects: [
+        '横浜市交10000形の制御伝送',
+        '相鉄12000系について',
+        '地方鉄道の新車事情',
+        '概説 小田急ロマンスカーGSE',
+        '京王5000系',
+        'E261系',
+        '東急の新系列車両2020系',
+        '001系｢Laview｣に乗る',
+        '西武鉄道40000系',
+    ],
+    personal_subjects: [
+        'レール輸送の観点から見るJR東日本機関車の動向',
+        '東北新幹線の「今」を紐解く',
+        '中央線と京王線の比較',
+        '鉄道模型汎用センサー線路の制作',
+        '湘南新宿ライン大研究',
+        'キップは語る(2)',
+        'Topics',
+    ],
+    hasSpecial: false,
+    hasSellPage: true,
+    selluri: 'https://koganeirail.booth.pm/items/682856',
+}) %>
+
+<%- include('partial/footer.ejs.html') %>
